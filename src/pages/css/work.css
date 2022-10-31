@@ -5,6 +5,10 @@
     margin: 5% auto;
     text-align: center;
   }
+  ::selection {
+    background:#f26674;
+    color: white;
+  }
   a.underline {
     text-decoration: none;
     color: #f26674;
