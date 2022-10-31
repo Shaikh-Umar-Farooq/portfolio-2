@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Lato:wght@100;300;400;700&family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+.about-container {
+    padding: 5% 15% 10%;
+  }
+
+  h2 {
+    font-family: "Barlow", sans-serif;
+    /* font-weight: 800; */
+    font-size: 1.9rem;
+    color: #303030;
+  }
+  p {
+    font-family: "Mulish";
+    font-weight: 500;
+    color: #303030;
+  }
+  .highlight {
+    color: #f26674;
+  }
+  .umar-img-container {
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .umar-img {
+    width: 70%;
+  }
+  button {
+    background-color: black;
+    color: #eeeeee;
+    border-style: solid;
+    border-color: black;
+    font-weight: 800;
+
+  }
+  button:hover {
+    background-color: #fccacf;
+    color: #303030;
+  }
+  .aboutme-btn-container {
+    font-family: "Barlow" !important;
+    font-weight: 600;
+    padding-top: 5%;
+  }
+  .aboutme-btn {
+    margin: 0 5% 10%;
+    padding: 2% 5%;
+  }
+  .aboutme-btn a{
+    text-decoration: none;
+  }
+
+.row
+{
+    display: flex;
+
+}
+.col
+{
+    flex: 1 1 500px;
+}
+
+@media (max-width: 850px) {
+    .row
+{
+    display: flex;
+    flex-direction: column;
+
+}
+}

@@ -1,0 +1,85 @@
+.header {
+    font-family: "Barlow", sans-serif;
+    color: #303030;
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+  }
+  a.underline {
+    text-decoration: none;
+    color: #f26674;
+    font-family: "Barlow", sans-serif;
+  }
+  .underline:hover {
+    color: #f26674;
+    text-decoration: underline;
+  }
+  .project-container {
+    padding: 0 30px;
+    margin: 7% auto;
+    width: 100%;
+  }
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .project-items {
+    width: 350px;
+    margin: 0 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-img {
+    width: 100%;
+    margin-bottom: 7%;
+    transition: transform 0.5s;
+  }
+  .project-btn {
+    opacity: 0;
+    width: 30%;
+    padding: 3%;
+    position: absolute;
+    left: 36%;
+    top: 40%;
+    transition: transform 0.7s;
+    background-color: black;
+    color: #eeeeee;
+    border-style: solid;
+    border-color: black;
+  }
+  button {
+    background-color: black;
+    color: #eeeeee;
+    border-style: solid;
+    border-color: black;
+  }
+  button:hover {
+    background-color: #fccacf;
+    color: #303030;
+  }
+  .project-img-container:hover :not(img) {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  .project-btn:hover {
+    background-color: #fccacf;
+    color: #303030;
+  }
+  
+  .project-img-container:hover :not(button) {
+    transform: scale(1.05);
+  
+    filter: blur(5px) brightness(105%);
+  }
+  .project3 .project-img {
+    width: 350px;
+    height: 350px;
+  }
+  .project-disr h6 {
+    color: grey;
+    font-size: small;
+    word-spacing: 10px;
+    font-weight: 500;
+  }

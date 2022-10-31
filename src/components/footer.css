@@ -1,0 +1,23 @@
+footer {
+    margin: 0;
+    padding: 2% 0 4%;
+    color: #9c9797;
+    text-align: center;
+    background-color: white;
+    font-family: "Mulish";
+  }
+  .footer-links a {
+    color: #303030;
+    margin: 2%;
+    font-family: "Mulish";
+    font-weight: 900;
+    font-size: 110%;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-bottom: 3%;
+  }
+  .footer-links a:hover {
+    color: #f26674;
+    text-decoration: underline;
+  }
