@@ -19,7 +19,7 @@ const About = () => {
                             its orbit. I recently began to be fascinated by web development,
                             started
                             <span className="highlight"
-                            >self teaching web development languages</span
+                            > self teaching web development languages</span
                             >
                             . I gained experience of working in this area by some minor
                             projects. As this area complements my studies, I am keen to gain
@@ -32,11 +32,11 @@ const About = () => {
                         <p>
                             <br />
                             Currently pursuing my bachelor's degree in
-                            <span className="highlight">Electrical and computer engineering</span>,
+                            <span className="highlight"> Electrical and computer engineering</span>,
                             at Thapar institute of engineering and technology.
                             <br />
                             <br />
-                            Team member <span className="highlight">ACM student chapter</span> ,
+                            Team member <span className="highlight"> ACM student chapter</span> ,
                             TIET, as a web developer and a graphic designer.
                             <br />
                         </p>
@@ -49,7 +49,7 @@ const About = () => {
                             <br />
                             <br />
                             Worked as graphic designer in
-                            <span className="highlight">OWASP student chapter</span>, TIET.
+                            <span className="highlight"> OWASP student chapter</span>, TIET.
                             <br />
                         </p>
                         <br />
