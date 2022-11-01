@@ -21,3 +21,12 @@
   margin-top: 50px;
     margin-bottom: 80px;
 }
+@media (max-width: 450px) {
+    .resume-container img{
+        width: 100%;    
+    }
+    .resume-container
+{
+    width: 100%;
+}
+}
