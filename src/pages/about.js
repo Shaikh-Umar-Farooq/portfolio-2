@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Umar from "../images/UMAR-IMG-01.svg";
 import "./css/about.css";
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 const About = () => {
     return (
         <>
@@ -68,12 +69,14 @@ const About = () => {
                     <div className="col umar-img-container">
                         <img className="umar-img" src={Umar} alt="umar-img" />
                         <div className="aboutme-btn-container">
-                            <button
+                            <Link to="/resume">  <button
                                 className="aboutme-btn"
-                                onClick={() => window.open('https://resume.io/r/nU26dIpE8', '_blank')}
+                            // onClick={() => window.open('https://resume.io/r/nU26dIpE8', '_blank')}
+
                             >
                                 MY RESUME
                             </button>
+                            </Link>
                             <button
                                 className="aboutme-btn"
                                 onClick={() => window.open("https://www.linkedin.com/in/umar-shaikh-96b7b31a5/", '_blank')}
