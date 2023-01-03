@@ -1,59 +1,66 @@
 .project-items {
-    width: 350px;
-    margin:  15px 15px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .project-img {
-    width: 100%;
-    margin-bottom: 7%;
-    transition: transform 0.5s;
-  }
-  .project-btn {
-    opacity: 0;
-    width: 30%;
-    padding: 3%;
-    position: absolute;
-    left: 36%;
-    top: 40%;
-    transition: transform 0.7s;
-    background-color: black;
-    color: #eeeeee;
-    border-style: solid;
-    border-color: black;
-  }
-  button {
-    background-color: black;
-    color: #eeeeee;
-    border-style: solid;
-    border-color: black;
-  }
-  button:hover {
-    background-color: #fccacf;
-    color: #303030;
-  }
-  .project-img-container:hover :not(img) {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  .project-btn:hover {
-    background-color: #fccacf;
-    color: #303030;
-  }
-  
-  .project-img-container:hover :not(button) {
-    transform: scale(1.05);
-  
-    filter: blur(5px) brightness(105%);
-  }
-  .project-disr
-  {
-    margin-top: -0px;
-  }
-  .project-disr h6 {
-    color: grey;
-    font-size: small;
-    word-spacing: 10px;
-    font-weight: 500;
-  }
+  width: 350px;
+  margin: 15px 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 7%;
+  transition: transform 0.5s;
+}
+
+.project-btn {
+  opacity: 0;
+  width: 30%;
+  padding: 3%;
+  position: absolute;
+  left: 36%;
+  top: 40%;
+  transition: transform 0.7s;
+  background-color: black;
+  color: #eeeeee;
+  border-style: solid;
+  border-color: black;
+}
+
+button {
+  background-color: black;
+  color: #eeeeee;
+  border-style: solid;
+  border-color: black;
+}
+
+button:hover {
+  background-color: #fccacf;
+  color: #303030;
+}
+
+.project-img-container:hover :not(img) {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.project-btn:hover {
+  background-color: #fccacf;
+  color: #303030;
+}
+
+.project-img-container:hover :not(button) {
+  transform: scale(1.05);
+
+  filter: blur(5px) brightness(105%);
+}
+
+.project-disr {
+  margin-top: -0px;
+}
+
+.project-disr h6 {
+  color: grey;
+  font-size: small;
+  /* word-spacing: 10px; */
+  font-weight: 500;
+  margin-top: 5px;
+}

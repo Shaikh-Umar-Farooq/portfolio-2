@@ -1,89 +1,345 @@
 .header {
-    font-family: "Barlow", sans-serif;
-    color: #303030;
-    width: 70%;
-    margin: 5% auto;
+  font-family: "Barlow", sans-serif;
+  color: #303030;
+  width: 100%;
+  margin: 5% auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header h1 {
+  margin-left: 5%;
+}
+
+.headerPic {
+  width: 35%;
+  position: relative;
+  margin-bottom: 25%;
+  margin-top: 0;
+
+}
+
+
+.headerPic img {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-in-out;
+}
+
+.headerPic img:hover {
+  opacity: 0;
+}
+
+
+
+
+
+
+.containerText {
+
+  display: flex;
+}
+
+
+
+.slidingVertical span {
+  animation: spin 5s linear infinite 0s;
+  color: #303030;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slidingVertical span:nth-child(2) {
+  animation-delay: 2.5s;
+
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(112%);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  46% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  70% {
+    opacity: 0;
+    transform: translateY(-112%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrow {
+
+  margin-left: 5%;
+  margin-top: -5%;
+}
+
+
+
+::selection {
+  background: #f26674;
+  color: white;
+}
+
+a.underline {
+  text-decoration: none;
+  color: #f26674;
+  font-family: "Barlow", sans-serif;
+}
+
+.underline:hover {
+  color: #f26674;
+  text-decoration: underline;
+}
+
+.project-container {
+  padding: 0 30px;
+  margin: 7% auto;
+  width: 100%;
+}
+
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-items {
+  width: 350px;
+  margin: 0 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 7%;
+  transition: transform 0.5s;
+}
+
+.project-btn {
+  opacity: 0;
+  width: 30%;
+  padding: 3%;
+  position: absolute;
+  left: 36%;
+  top: 40%;
+  transition: transform 0.7s;
+  background-color: black;
+  color: #eeeeee;
+  border-style: solid;
+  border-color: black;
+}
+
+button {
+  background-color: black;
+  color: #eeeeee;
+  border-style: solid;
+  border-color: black;
+}
+
+button:hover {
+  background-color: #fccacf;
+  color: #303030;
+}
+
+.project-img-container:hover :not(img) {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.project-btn:hover {
+  background-color: #fccacf;
+  color: #303030;
+}
+
+.project-img-container:hover :not(button) {
+  transform: scale(1.05);
+
+  filter: blur(5px) brightness(105%);
+}
+
+.project3 .project-img {
+  width: 350px;
+  height: 350px;
+}
+
+.project-disr h6 {
+  color: grey;
+  font-size: small;
+  word-spacing: 10px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1140px) {
+  .arrow img {
+    width: 2%;
+  }
+
+  .containerText {
+    flex-direction: column;
+    text-align: left;
+
+  }
+
+  @keyframes spin {
+    0% {
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    30% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    35% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    46% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    70% {
+      opacity: 0;
+      transform: translateY(-25%);
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.tabs {
+  font-family: arial;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15vh;
+
+}
+
+.tab-buttons {
+  margin-bottom: 50px;
+  font-weight: lighter;
+}
+
+.tab-buttons button {
+
+  margin-right: 0px;
+  font-size: 20px;
+  background: transparent;
+  font-weight: 500;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, .4);
+  transition: all ease-in-out .5s;
+  border: 2px solid transparent;
+
+}
+
+.tab-buttons button:hover {
+  background-color: white
+}
+
+.tab-buttons button.active {
+  border: 2px solid black;
+  background-color: pink;
+
+  color: black;
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
-  ::selection {
-    background:#f26674;
-    color: white;
+
+  .header h1 {
+    text-align: center;
   }
-  a.underline {
-    text-decoration: none;
-    color: #f26674;
-    font-family: "Barlow", sans-serif;
-  }
-  .underline:hover {
-    color: #f26674;
-    text-decoration: underline;
-  }
-  .project-container {
-    padding: 0 30px;
-    margin: 7% auto;
-    width: 100%;
-  }
-  .project-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .project-items {
-    width: 350px;
-    margin: 0 5px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .project-img {
-    width: 100%;
-    margin-bottom: 7%;
-    transition: transform 0.5s;
-  }
-  .project-btn {
-    opacity: 0;
-    width: 30%;
-    padding: 3%;
+
+  .slidingVertical span {
     position: absolute;
-    left: 36%;
-    top: 40%;
-    transition: transform 0.7s;
-    background-color: black;
-    color: #eeeeee;
-    border-style: solid;
-    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
-  button {
-    background-color: black;
-    color: #eeeeee;
-    border-style: solid;
-    border-color: black;
+
+  .headerPic {
+    margin-top: 23%;
   }
-  button:hover {
-    background-color: #fccacf;
-    color: #303030;
+
+  .arrow {
+    display: none;
   }
-  .project-img-container:hover :not(img) {
-    transform: scale(1.05);
-    opacity: 1;
+
+  .headerPic {}
+
+  .headerPic img {
+    width: 100%;
   }
-  .project-btn:hover {
-    background-color: #fccacf;
-    color: #303030;
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+  .headerPic img {
+    width: 100%;
   }
-  
-  .project-img-container:hover :not(button) {
-    transform: scale(1.05);
-  
-    filter: blur(5px) brightness(105%);
+
+  .tab-buttons button {
+    font-size: 16px;
   }
-  .project3 .project-img {
-    width: 350px;
-    height: 350px;
-  }
-  .project-disr h6 {
-    color: grey;
-    font-size: small;
-    word-spacing: 10px;
-    font-weight: 500;
-  }
+
+}
