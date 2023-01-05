@@ -15,7 +15,7 @@ const About = () => {
                         I'm Umar Shaikh, a front end developer & UI/UX designer based in punjab, India.
                         <br />
                         <br />
-                        second year college student,<span className="highlight"
+                        Second year college student,<span className="highlight"
                         > self taught</span> front-end developer and UI/UX designer, courteous and enthusiastic, with interests in emerging technologies. Able to take
                         ideas from concept to wireframe to prototype to production.
 
