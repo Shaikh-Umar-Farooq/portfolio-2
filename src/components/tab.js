@@ -18,7 +18,7 @@ const Tabcontent = (props) => {
         <>
             <div className="tabs">
                 <Tabs>
-                    <Tab label="Fron-end work">
+                    <Tab label="Front-end work">
                         <div class="project-container">
                             <div class="project-flex">
                                 <Project img={webdevwebsite} url="https://acm-webdev-site.netlify.app/" name="Web dev guide" language="HTML:57.5% CSS:21.2% JS:21.3%"></Project>
